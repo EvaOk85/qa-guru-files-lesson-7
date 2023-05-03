@@ -45,9 +45,8 @@ def test_downloaded_file_size ():
 
 
 def test_pdf ():
-
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-    path_pdf = os.path.join(PROJECT_ROOT_PATH, '..', 'resources', 'docs-pytest-org-en-latest.pdf')
+    path_pdf = os.path.join(PROJECT_ROOT_PATH, 'resources', 'docs-pytest-org-en-latest.pdf')
     reader = PdfReader(path_pdf)
     number_of_pages = len(reader.pages)
     page = reader.pages[0]
