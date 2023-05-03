@@ -11,7 +11,7 @@ import zipfile
 
 
 def test_csv ():
-    # TODO оформить в тест, добавить ассерты и использовать универсальный путь
+
     project_root_path = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(project_root_path, 'resources', 'eggs.csv')
     with open(csv_path, 'w') as csvfile:
@@ -29,7 +29,7 @@ def test_csv ():
 
 
 def test_downloaded_file_size ():
-    # TODO сохранять и читать из tmp, использовать универсальный путь
+
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     path_file = os.path.join(PROJECT_ROOT_PATH, 'resources')
     url = 'https://selenium.dev/images/selenium_logo_square_green.png'
@@ -45,7 +45,7 @@ def test_downloaded_file_size ():
 
 
 def test_pdf ():
-    # TODO оформить в тест, добавить ассерты и использовать универсальный путь
+
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     path_pdf = os.path.join(PROJECT_ROOT_PATH, '..', 'resources', 'docs-pytest-org-en-latest.pdf')
     reader = PdfReader(path_pdf)
@@ -59,7 +59,7 @@ def test_pdf ():
 
 
 def test_download_file_with_browser ():
-    # TODO оформить в тест, добавить ассерты и использовать универсальный путь к tmp
+
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     path_browser = os.path.join(PROJECT_ROOT_PATH, 'tmp')
 
@@ -81,7 +81,7 @@ def test_download_file_with_browser ():
 
 
 def test_xls ():
-    # TODO оформить в тест, добавить ассерты и использовать универсальный путь
+
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     path_xlrd = os.path.join(PROJECT_ROOT_PATH, 'resources', 'file_example_XLS_10.xls')
     book = xlrd.open_workbook(path_xlrd)
@@ -99,7 +99,7 @@ def test_xls ():
 
 
 def test_xlsx ():
-    # TODO оформить в тест, добавить ассерты и использовать универсальный путь
+
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     path_xlsx = os.path.join(PROJECT_ROOT_PATH, 'resources', 'file_example_XLSX_50.xlsx')
     workbook = load_workbook(path_xlsx)
@@ -109,7 +109,7 @@ def test_xlsx ():
 
 
 def test_zip():
-    # TODO сохранять и читать из tmp, использовать универсальный путь
+
     PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     path_dir = os.path.join(PROJECT_ROOT_PATH, 'resources')
     path_zip = os.path.join(PROJECT_ROOT_PATH, 'resources/archive.zip')
